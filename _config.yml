@@ -1,0 +1,20 @@
+title: Cody's Devlog
+baseurl: ""
+url: "https://blog.codyklr.com"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+remote_theme: pages-themes/minima
+header_pages:
+  - about.md
+collections:
+  tutorials:
+    output: true
+    permalink: /tutorials/:path/
+defaults:
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: post
